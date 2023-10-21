@@ -17,7 +17,7 @@
     "wdeploy": "wrangler pages deploy dist/ --commit-dirty=true"
   },
   "dependencies": {
-    "@kobalte/core": "^0.11.1",
+    "@kobalte/core": "^0.11.2",
     "@solidjs/router": "^0.8.3",
     "solid-js": "^1.8.3",
     "zod": "^3.22.4"
