@@ -11,7 +11,9 @@
     "types": ["vite/client"],
     "noEmit": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "resolveJsonModule": true
   },
-  "include": ["src/", "*.config.ts"]
+  "include": ["src/", "*.config.ts"],
+  "exclude": ["functions/"]
 }

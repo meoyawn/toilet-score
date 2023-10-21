@@ -12,6 +12,7 @@
   "parserOptions": {
     "project": "tsconfig.json"
   },
+  "root": true,
   "plugins": ["solid"],
   "rules": {
     "@typescript-eslint/ban-ts-comment": [

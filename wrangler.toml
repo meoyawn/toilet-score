@@ -1,0 +1,3 @@
+kv_namespaces = [
+    { binding = "votes", id = "95bfd146f2b842a282f5d42a4843c90a" }
+]

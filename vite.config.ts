@@ -1,20 +1,26 @@
-import { defineConfig } from 'vite';
-import solidPlugin from 'vite-plugin-solid';
+import { defineConfig } from "vite"
+import cloudflareFunctions from "vite-plugin-cloudflare-functions"
+import solidPlugin from "vite-plugin-solid"
+
 // import devtools from 'solid-devtools/vite';
 
+// noinspection JSUnusedGlobalSymbols
 export default defineConfig({
   plugins: [
-    /* 
-    Uncomment the following line to enable solid-devtools.
-    For more info see https://github.com/thetarnav/solid-devtools/tree/main/packages/extension#readme
-    */
-    // devtools(),
     solidPlugin(),
+    cloudflareFunctions({
+      wrangler: {
+        log: true,
+      },
+    }),
   ],
   server: {
     port: 3000,
   },
   build: {
-    target: 'esnext',
+    target: "esnext",
   },
-});
+  test: {
+    environment: "node",
+  },
+})
